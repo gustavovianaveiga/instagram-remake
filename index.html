@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" type="imagem/png" href="https://www.ifmg.edu.br/portal/ensino/bibliotecas/Instagran.jpg/@@images/image.png" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/classes.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-1">
+            <a href=""><img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="instagram" class="instaimg"></a>
+
+            <a href=""></a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAC+0lEQVRoge2Zz08TQRTHP/UH3tSLhQjEIN7k5kEhil7VgyYWww8T/wQTf0Rignqj/gOevZiQhoO0xsSb4K8Yr+qdkxG8KBEstNbDvHFWWaSzM7Ot0k+yeZu2833vdffNzL6FFi2CkHEc3wGcAU4CfcABYLd89wWYB94Dz4AnwCdHf94ZBErAGlCr81gDisCJBsS7jl7UP6uDqwCzwFXgKJAFdsqRBY4B14A5+a0e9xg4mHLsvxgDliSQb8AksM9ifBbIA8ui8RUY8RzjptzG/JtTQKeDVhdQiOhNOEdXJ3fF4Q85d50gNFeAKiklMyaOqkAugP4QJpnhAPqAKmxdEzdDOQHGMTXTE8KBnp2mQohHyGBqpuRbfFCEl4Fu3+IxdKJmwhpw3KdwSUQnfYpuQl58zvgS7ECtwhXs1glXsuJzVc6t2Bbz2VlgB/ACWHQKzY4F4DVqV3DadnBcIoNiiw5BJUXfVqdsB8Yl0if2ZeJwkvNK7GEfYp9RRZdmfWjaxfeCD7GyiLX5ELNkl/j+bjsw7tZqBlZtB8QlsiR2j1ssidgr1vrWiktkXmxv4nCSc0jsR9uBcYm8EzuQOJzk9Iv9YDswLpFZsecTh5Mc7fOpD7F2zBbFeqvggN6irGFqxZkiahrM+xKsg3vis+BTtF9EV0h/G3/Et7jeyhfw95weRwaYFl+PQjjoQT1+1lCPo6G4JT4Wgf2hnIxgmg9DAfQvYpoP5wLo/8YEJplx/NxmGdSV0ElUUR2b4OhkdM10OWh1Y2oielSAUbcw62MYUzPLqKnZZp3JoqbYFUz7J9oP1smk0kbtwcxm2vEccB21pWlHbf/b5HwAuAE8/yPoKVRhjzYyGVAtmxnsXiuUgYeoDn2UjZIJ1nmMIwtcBh4Ab1FTaBm1uM0Db4D7EtTfnjhHaIJkfDHE+itcAS41MqikbJRMKlOzb/6rZHJsgWRSWTR9k0N1VLZOMs3a14oyjaqNSuSz7ZiOyz/HBcyVudPgWJzJkeLr7BYtgJ/57P8kvPwRcAAAAABJRU5ErkJggg=="
+                class='searchimg' id="searchimg"></a>
+            <div class="pesquisar-box"><input type="search" placeholder='Pesquisar' class="search" id="search" onclick="soff()"></div>
+            <div class='icones'>
+                <ul>
+                    <a href=""> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACGElEQVRoge3YvWsTcRzH8VfboKIiSBVEVJAOjiJKRRBRFwU3lw5uUvon2KGji/9CBxcRdNHJRdGCVHwapIuTICriEyKIgthK43C/mFyappfkLnep94aDkHwfPp/7/e6bu6MkEfswh/vh80ByEp9QDcdXnMlVUYcMYQZ/RAbuhKMavpsJMYVmG26JRC/jCoZFwqfFzW3PSeOaHMQr9W10tkXMKXwOMW9xpG/qEnIBP0UCX2B/m9i9eBpif+Fiw2/VVY7MqYi2T63hNWxOkLcRsw15s9ggJyN78Fj9zE52UWMy5FbxxErhmRs5gY+hyTsc7aHWIbzWegUyMzKES1gKDe5iNIW6o6FWTfh06JWJkebRehkjKdYfCTWXQ4/bMjByAC9D0e84n2bxJs7hmwwu9gn8CAUXMJZW4TaMhV41IxO9FGserdexpUeBnbAJVxv610Z0R+zEg1BgSXTx5cUUfgct89idNPE4PoTE9ziWhboOOYw3Ik1fcHqthCkshoSH2JWlug7ZgXviu2TFXfRW3BSfFJX+aUxMRVzjDZH2fzxXH619u1Hrkpq+mtZnRM8KRNtpAeO5SOuOcZHmxdUCBmVFYgy3CBxISiNFY90YSfO/otsBkcqroXJF2pD0DKc64tfNipRGikZppGiURopGaaRolEaKRmmkaJRGisa6MdLqIajI77QaiWlvtSKP+iSkF+bzFlDy3/AXWYWcPdCUBCUAAAAASUVORK5CYII="
+                            class="invert" /></a>
+                    <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAEf0lEQVRoge3aW6hUZRQH8N/R47FjeTl5KYo0K+slikoqsAtRVlr2UmoW5MMpuygUmRbRQxTdwIcCq4esoF7EwsgHszLtBpZFRVl2EzGh0EAPFkfLo9PD9w0zjXtm9t4zc8558A+bmdlrfev7r/1d9lrrG45icKGtibYm4jJcjDNxOrowMsr/wl78ip/xGT7GziZyyI0T8CC+RiHn9RWWRlv9jsl4GQfKCO3B21iCGZgijEg7hsXvU6JsKdYII1RsfwAv4dT+cGAEni5zoA9v4Hp05LDXgVl4M9oqYD+eRGcT+CZiKrbGzg5hheY+vdPwarRdwPc4v4n2wa1Ko/ANzmt2B2W4AN8qjc68ZhlejMPR8LPyTaGsGI7lsc/DuL9Rg/cqrYU7GzWWA/coTbVFeY3MikYO447m8MqF+ZHHIVyXtfFk9AhPYnFzeeXCQwKXvTJsMG1YHxuubA2vzGgTtugC3pUyIrklNvgDx7eMWnaMw26B25x6yu1CHFTAba3llQvdArcfMbSW4pyouLWe4gChHT8JHG+qpVhcG3f1A6m8WChwfKeawgRhi+vFqCZ0OK7B9sMxJOH+GOGN34exxZvlitPj7w+xr0ESp+BLIcDMijbMxkzhHVaJHnwiTP2rijfLHZkWPz/I0Xk5TsJGTBJylUcztJ0mJFzn4K0aeu/Hz0uThB8Jc296ho4rMRZbHJk81RuZiXhNGIEXU/RzbbS7IUm4MwonpaJ8JEbhC9UzwaSRGYNlSpH1SsnrohKnRv0dScJ9UTgySVgHncLaqpfWFkemHQuwq0y2XljgaTA6tulJEh6MwvaMTnRgbQonitcK4YVWfm8Tjs3QZ3tsdzBJWAwSR2cwOBSrKkjtimTTOrZF9lCo5ojsiMK00WUbXikjtB9PKb2DHk7hxHacnNEJQnRedY1sjMKrUxpbppTBrYrGK/GM6k7sxlnpuf8PxV0r8VXxXBQuSWHosaj7KS6qodcmlHgqnejRWN6/NNpZniScF4Xr6hh5ANuEoC1NXlC5jnpxeTq+VfFetDU3SdiFf/GP6gt+jpAxpt0mi+gQgryDuCFj20p0SYi1KrFO8HRhFTJdDRAYIVQZG8UidaJfQsWwgF8M3nykmPjdWEtxCH6Iigtazyszbpch8ZsZlf9UYw4OAMYLnOpmh+VYExus0dwzlLxow2qB09osDScIVZSC8IYeaBSjhD1CyJ8JVwhb8UBXGrsjhz5ck9fIzUIe3yfUgfsbC5XKtnc3amy+Uoj/fKPGUuIYvKAUy93XLMMzlEKMVuNCpXS5V4qqYla02pEz8LrSWcx3OLcVHbXCkeFC7LVa6RykF48L0ys1sqa1SRgpzOFuIYX9HJvxm7Bd7hE2i+NwonD+fjYuEco5xURsv1BJeUKLz94rR6RTOBLbXSbLc20WIurxjZDLMyLDhKf/iFKaukF4kp3C6e9Uodo4Nl7t+FsIMbYLhehNwj8ffs9PPx+KT3Bb2fdNuLK/iTSKysrHbIMjDsuMgrCY50pXDRy06NacXe4oauE/Bz19F6ytcy4AAAAASUVORK5CYII="
+                            class="invert" /></a>
+                    <a href=""> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAEtUlEQVRoge2az29UVRTHP5SRDkELM50qrsRqJFiQJkYXRKMLEQhtImwwojswxUQssmBhaIjBRONKIyorV/4BGiER0DBUBRVI2Sj1BwtUFoqJChTKIOPinJvzZua9N+/HnWoM3+Rlknvu/d5z3z33nh9v4Ab+W5jlkasEPAqsAAaAfqAPuEXlfwHngR+Bb4DPgcPAHx51yIwi8DRwALgG1FM+14CPgY3KNeOYC2wHzgWUmgYOAWPAMLAEKAfkZeBelY0Bn+gYJ/8F2KbcM4K1wJmAAl8Dm4CeiP7jwJEIWQ+wGTge4PsBWONR3xYUgXcDEx4HVnvkXwOcCPC/TQfMbWFgkkvAVmC270mUcxSYwnb7Nl/kdyLbXQe+BZb6Io7BMmBS5/weWJSXsC9A+BVQyUuYAiXgM+zcLMxKVMTM6Qtgng/tUmIecBQzs+4sJHsxcyp7Uy09ejGr2JN28FrsYM/EmXB4EJgAPm1qvw+7AFYlJZuL+YmtnhRshznAbqCm806E9HkRO/yJruXtmJ/oxBXbjEHgFOY/asjONKOALDDRCy5iYYdPZxeGArATuEpj/LU7Zowz+Z9pc/A3YjdEJzFAY1jinlOImcXhpPZ9Mq7TQe20Ka+mEegCXgCu0LqIGnB/Ao4t2n9/VIcSElZPEx0A5sE9iD+KCunHEvKUkEXXiNBzvRIeyqdvC2YBzwIXiV7ESeCmFJxVHTfsGroCwhX6GxVyZ0E/kgXuJToymAaeQd5wUlT196Ew4T6aVpkTI8AF2meJOzJwr9OxH4YJv1PhkgzEzRghWap7lGy+aikWPrXgPJaS5kE/thMfEL2IKWBxxjl6lePXMGHQMY1nnKALO4jva9suwhcymnGO8QDHdFiHYCEg64Ef1fHnaNzZ5sVUabxo0qDtQn4jn2ktxiLUoRC5M7OLwF0Z53CoEGNaeQ77bMzZvdckKyNm5t7ilgz8zYg97B+R/frdoWPPAvMD7UNYEHoBP4uANtfv66QLFRwGkNjpOvC4ts1HdiZ4JvrT6xuJl5X3tTDhE6QPUQpIUaIOvKNtK5GdqQOXkd3yndccIcZ6FpA+aNyphGeA25EC3nXM2WX1E3FwQeNVYvQ8oEpsTkC4HFn038BLSApa1wl20bns8jmdZ19cp6ewNDcOc7D01J0PN24gr6Zt4BKrDXGdupE0sl2q+wqtSdGrtM/u8mJY5/uJBDWubdr5BOHm8QBW7XDp6aAvTWNQwKzg+SQDilitNywectXHGlIo6PQuOLjqziQpKo6rddAlpKAcxEHkLISVbDqF5Vj481jawXuwN9DrV69UqGA34htZCIpIWcj5hH+jiH0zcEx1OEYOM64Ap5Vopj8rlJEvv3XkzOb+4LMIi4wnkYJypzGImdMkcIcv4luxmGoKuaILvsgDKCC302XMnPp8T9INvIX5jwmkFusLQzQWs98k44edpFiFbbsrro0gwVwYvkQuizCUkBzFhR3OlFZ61DcWRaSG68IZ5yAPI7nCOiSLqwTkFW1br32qNEYIZxGP3dFdiEI3UhXf36RU0qeGRLEbyBkh+PxTTQ/wCPAwkvffjTjSBYjSfwK/IzfgaaQaUkVS4Bv43+Ef1+CyuOab4AEAAAAASUVORK5CYII="
+                            class="invert" /></a>
+                    <a href=""> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAADOUlEQVRoge3YT4ydUxjH8c/tRFUwo6FUUzoh2oVakKlkIpG0tVGCYIgQrUQssJCQWLCysZYm/ixEIm0jVv6smtCFEGpD/Jmi6t+Coow2TDWjcy3Oc/NOk3vdOe/73hmTvN/k5CT3vM/v/M69zzn3PQ8NDQ0NDQ0NWpnPn4atuBnjWI2V+BE/YB/24GAfnctwN7bgIqzBFA7jfbyOtzGT6a8vLUzgK7Tn0d7EaBed0Ribj8aXuL3ORZyB3XMmmMQTGMMFscjzsRnP41g89ye2z9HZgb9i7Gg8uzliW6G1CU/iwJz5dmFFHYt4LwSnwsxQn5izw2Qbs3go2mx89hzO6qMxhPvwR8S8G15K0cIrIfQ11mfGT0g5PhttBrdlamzAofCwR/6eBneFwO/yF9HhfkWKPFhSY0N4aOOO3ODlim/i3pIGOrwYrQo7wsshydu8uTECP8WyiiaGo1VhGT4PTzf0eqAbt0a/S8rvKhyLVoVZ6eSEW3ICP5FWf1VFA3UyJnn6OCfoSASdOwhHJTlP8vRrTtCJCMraWANmueTpRLfBXnvkaPQjg3BUkpXRT3Ub7LWQzs+3tnY75el46ZpavRbS2VCbardTnquj/6jbYK+F7I9+a+12yrMl+g9zgkals3taeglcbEZwHCel+0sW70inxGM1myrD45KXfWWCb4rgny3urzKMX8LLtjICLSkf29hZn69sng0PH1QRGZPuESdxXQ2mcrk+5p7BlVXFnla8GnS7hw+KS/BbzP1UHYJD2BuC32FdHaJ9WKu4D72l//V63qySqhptfCGVgQbFhYpqzQEDeHFdJ9Wu2tIl5+K6J4g5JmOO75X4z8iZ6KBiz1xbo/Y4fgrtb3BpjdpdWaM4lo/jnho0t+Pv0NwvpdeCcDpeUlRIXsaZJXRW4Jk5OrtVqF9V4VH8EyY+w8aM2CsUBYUZPFK7u0yuwbeSoWmpqvhfhbQWHpbSsrMfxgfscd4M4wVFiuzVPc9XObWI/SrOWSCPWdypKFwcdupL3rb4rHPiTSy4u0xW4w1FEXtntE4R+zWp8r5keEDaM500mpZqwUuSjdI/9SQuX2QvlRnx/yorNTQ0LGX+BTOy3WG1X9GbAAAAAElFTkSuQmCC"
+                            class="invert" /></a>
+                    <a href=""><img src="https://cdn.domestika.org/ar_1:1,c_fill,dpr_auto,f_auto,h_128,pg_1,t_base_params,w_128/v1621868491/avatars/001/887/844/1887844-original.jpeg?1621868491 " class="icon" /></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="global">
+        <div class="corpo">
+            <section id="" class="storiesbox">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAbElEQVQ4jb3TMQ6CAAyF4S+chkkJm4MOMhrDyrW4gkfyDBrlFiw2YW4j//43L+0rO3DBIyufsGDIyD2+uGXkDh/cM/LxJ48ZucUbU0Zu8MSckbcJXtkEwUFhB0HpCkGpB0E08VoZclb4hf+zAiK6ERJgkCNZAAAAAElFTkSuQmCC"
+                    class='seta1 invert' onclick="setaum()" />
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAZ0lEQVQ4jc3SsQ3CUAwFwBPMkwohqtAFRJnRWCEjZYM0KCmyA41riv+kCLeWT5b9COv8ozdhx9KK99hwbwVgKOSWIE+suCbIq5BLgoz4oEuQN2acDt8gusFD8IWhhptyECdxKuTP6wslCBKgE4PLsAAAAABJRU5ErkJggg=="
+                    class='seta2 invert' onclick="setadois()" />
+                <div class="storiesdots">
+                    <li>
+                        <img src="https://cdn.domestika.org/c_fill,dpr_auto,f_auto,h_256,pg_1,t_base_params,w_256/v1588704894/avatars/002/741/699/2741699-original.JPG?1588704894" id="julia" />
+                        <p id="juliaa">julia</p>
+                    </li>
+                    <li>
+                        <img src="https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/d/8/7/2/d872639bee77b8e4d767f6922ae1850c.jpg" id="pablo" />
+                        <p id="pabloo">pablo</p>
+                    </li>
+                    <li>
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLT2ZsYEQqIdLrX2x53c_jYRcbbkxS-XBemBNPXRCw=s900-c-k-c0x00ffffff-no-rj" id="joao" />
+                        <p id="joaoo">joão</p>
+                    </li>
+                    <li>
+                        <img src="https://www.thefamouspeople.com/profiles/images/francisco-lachowski-1.jpg" id="francisco" />
+                        <p id="franciscoo">francisco</p>
+                    </li>
+                    <li>
+                        <img src="https://www.tupi.fm/wp-content/uploads/valentim-cuiaba.jpg" id="alberto" />
+                        <p id="albertoo">alberto</p>
+                    </li>
+                    <li>
+                        <img src="https://pbs.twimg.com/profile_images/613800852285956097/M-a1pU6B_400x400.jpg" id="fabio" />
+                        <p id="fabioo">fabio</p>
+                    </li>
+                    <li>
+                        <img src="https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/204381.jpg" id="luis" />
+                        <p id="luiss">luis</p>
+                    </li>
+                    <li>
+                        <img src="https://tntsports.com.br/__export/1579893452487/sites/esporteinterativo/img/2020/01/24/pedro_1_crop1579892206794.jpg_1270962302.jpg" id="pedro" />
+                        <p id="pedroo">pedro</p>
+                    </li>
+                    <li>
+                        <img src="https://conteudo.imguol.com.br/c/esporte/e7/2022/02/10/gabriel-volante-do-inter-em-anuncio-oficial-pelo-clube-1644524897370_v2_1x1.jpg" id="gabriel" />
+                        <p id="gabriell">gabriel</p>
+                    </li>
+                    <li>
+                        <img src="https://styles.redditmedia.com/t5_50igsm/styles/communityIcon_fzi3krcivpn71.jpg?width=256&s=3872827b3df29a0aed7826a2881f557dae6a001c" id="maria" />
+                        <p id="mariaa">maria</p>
+                    </li>
+                    <li>
+                        <img src="https://p2.trrsf.com/image/fget/cf/1200/1200/filters:quality(85)/images.terra.com/2022/01/22/1798086607-ana-de-armas.jpg" id="ana" />
+                        <p id='anaa'>ana</p>
+                    </li>
+
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <div class="global">
+        <section class="postagem">
+            <div class="post">
+                <!-- <div class="postimg">
+                    <img src="https://cdn.eutotal.com/imagens/poses-para-selfie-og.jpg" alt="">
+                    <img src="https://moda20.com.br/wp-content/uploads/2020/05/selfie-2.jpg" alt="">
+                    <img src="https://www.estudopratico.com.br/wp-content/uploads/2018/05/selfie-origem-evolucao-significado-1200x675.jpg" alt="">
+                </div> -->
+                <div class="postperfilshadow">
+                    <div class="postperfil">
+                        <!-- <img src="https://d34ad2g4hirisc.cloudfront.net/users/avatars/000/384/865/medium/ad8c540ee328db6c5d9aa6429247db6a.jpg" alt=""> -->
+                    </div>
+                </div>
+                <div class="like"></div>
+            </div>
+    </div>
+    </section>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/js/javascript.js"></script>
+</body>
+
+</html>
